@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;700&display=swap");
+
+:root {
+    --fondo-primario: black;
+    --fondo-blanco: white;
+    --fondo-red: #e63946;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    background: var(--fondo-primario);
+    height: 120px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav > img {
+    width: auto;
+    height: 100px;
+}
+
+header {
+    background: url("/img/Home.jpeg") center center no-repeat;
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1440px) {
+    header {
+        background: url("/img/Home.jpeg") center center no-repeat;
+        width: auto;
+        height: 300px;
+        background-size: cover;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+}
+
+header h1 {
+    background-color: var(--fondo-red);
+    color: white;
+    text-align: center;
+    padding: 8px;
+    width: 100%;
+}
+
+.categorias {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.categorias__MiniCard--papas {
+    background: url("/img/papas.jpeg") center no-repeat;
+    background-size: cover;
+    width: 220px;
+    height: 100px;
+    border: 1px solid brown;
+    border-radius: 10px;
+    color: var(--fondo-blanco);
+    text-align: center;
+    text-shadow: 1px 1px black;
+    line-height: 100px;
+    margin: 15px 0;
+}
+
+.categorias__MiniCard--sodas {
+    background: url("/img/sodas.jpeg") center no-repeat;
+    background-size: cover;
+    width: 220px;
+    height: 100px;
+    border: 1px solid brown;
+    border-radius: 10px;
+    color: var(--fondo-blanco);
+    text-align: center;
+    text-shadow: 1px 1px black;
+    line-height: 100px;
+    margin: 15px 0;
+}
+
+.productos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: auto;
+}
+
+.productos__card {
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px lightgray;
+    margin: 20px 10px;
+    width: 450px;
+}
+
+.productos__card > img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px 0 0 10px;
+}
+
+.productos__card--caracteristicas {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 5px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.productos__card--caracteristicas span {
+    font-weight: 200;
+    font-size: 13px;
+}
+
+.productos--precio {
+    font-weight: bold;
+    color: brown;
+    font-size: 20px;
+    margin: 5px 0px;
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        background: url("/img/Home.jpeg") center center no-repeat;
+        width: auto;
+        height: 200px;
+        background-size: cover;
+    }
+
+    .categorias__MiniCard--sodas {
+        width: 150px;
+        height: 90px;
+    }
+
+    .categorias__MiniCard--papas {
+        width: 150px;
+        height: 90px;
+    }
+
+    .productos--precio {
+        font-weight: bold;
+        color: brown;
+        font-size: 15px;
+        margin: 3px 0px;
+    }
+}
+
+footer h3 {
+    text-align: center;
+}
+
+.iconos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px;
+}
+
+.iconos img {
+    width: 80px;
+    height: 80px;
+}
+
+.arrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+a img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
