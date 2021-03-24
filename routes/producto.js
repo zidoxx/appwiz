@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 
-app.get("/productos", (req, res) => {
+app.get("/producto", (req, res) => {
     res.send("Directo a productos");
 });
 
