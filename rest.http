@@ -1,0 +1,11 @@
+GET http://localhost:3000/tipousuarios
+
+###
+
+POST http://localhost:3000/tipousuarios
+
+Content-Type: application/json
+
+{
+    
+}
