@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login</title>
+        <link rel="stylesheet" href="./styles/style.css" />
+    </head>
+    <body class="body-admin">
+        <form
+            class="content"
+            action="/users"
+            enctype="application/x-www-form-urlencoded"
+            method="post"
+        >
+            <label for="id_tipo_usuario">Tipo de Usuario</label>
+            <select name="id_tipo_usuario">
+                <option value="1">Administrador</option>
+                <option value="2">Restaurante</option>
+                <option value="3">Usuario</option>
+                <option value="4">Domiciliario</option>
+            </select>
+            <label for="nombre">Nombre Completo</label>
+            <input
+                type="text"
+                name="nombre"
+                placeholder="Ingrese su nombre completo"
+            />
+            <label for="direccion">Dirección</label>
+            <input
+                type="text"
+                name="direccion"
+                placeholder="Ingrese su dirección"
+            />
+            <label for="telefono">Teléfono</label>
+            <input
+                type="text"
+                name="telefono"
+                placeholder="Ingrese su numero telefonico"
+            />
+            <label for="whatsapp">Whatsapp</label>
+            <input
+                type="text"
+                name="whatsapp"
+                placeholder="Ingrese su numero de whatsapp"
+            />
+            <label for="email">Correo Electronico</label>
+            <input
+                type="text"
+                name="email"
+                placeholder="Ingrese su correo electronico"
+            />
+            <label for="password">Contraseña</label>
+            <input
+                type="password"
+                name="password"
+                autocomplete=""
+                placeholder="Ingrese su Contraseña"
+            />
+            <input type="submit" value="Enviar" />
+        </form>
+    </body>
+</html>
