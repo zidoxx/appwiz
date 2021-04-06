@@ -2,10 +2,11 @@ GET http://localhost:3000/tipousuarios
 
 ###
 
-POST http://localhost:3000/tipousuarios
+POST http://localhost:3000/login
 
 Content-Type: application/json
 
 {
-    
+    "email": "estebancastriver@gmail.com",
+    "password": 12345
 }
