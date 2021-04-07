@@ -3,8 +3,10 @@ require("dotenv").config();
 const express = require("express");
 const app = express();
 const jwt = require("jsonwebtoken");
+const cors = require("cors");
 
 app.use(express.json());
+app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 app.use(require("./routes/index"));
@@ -19,6 +21,6 @@ app.post("/register", (request, response) => {
     });
 });
 
-app.listen(3000, () => {
-    console.log("Servidor corriendo en puerto 3000");
+app.listen(process.env.PORT_BACKEND, () => {
+    console.log("Servidor corriendo en puerto 4000");
 });

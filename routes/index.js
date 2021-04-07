@@ -28,10 +28,21 @@ const {
     createBills,
 } = require("../lib/controllers/facturas.controller");
 
-router.get("/typeusers", getTypeUser);
+const {
+    getProducts,
+    createProducts,
+} = require("../lib/controllers/productos.controller");
+
+const {
+    getDetailBill,
+    createDetailBill,
+} = require("../lib/controllers/detalle.factura.controller");
+
 router.get("/admin", middleware, (req, res) => {
     res.redirect("/admin.html");
 });
+
+router.get("/typeusers", getTypeUser);
 router.post("/typeusers", createTypeUser);
 
 router.get("/users", getUsers);
@@ -46,5 +57,11 @@ router.post("/restaurants", createRestaurants);
 
 router.get("/bills", getBills);
 router.post("/bills", createBills);
+
+router.get("/products", getProducts);
+router.post("/products", createProducts);
+
+router.get("/detailsbill", getDetailBill);
+router.post("/detailsbill", createDetailBill);
 
 module.exports = router;
